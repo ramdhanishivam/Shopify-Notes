@@ -1,0 +1,47 @@
+Architecture of a Shopify theme
+
+A theme controls the organization, features, and style of a merchant's online store.
+
+Theme code is organized with a standard directory structure of files specific 
+to Shopify themes as well as supporting assets such as images, stylesheets, and scripts.
+
+Shopify themes are a package of template files, building blocks, and supporting assets.
+
+Theme files fall into three general categories. Take a closer look at how each of them 
+helps customize your customer’s theme. 
+
+Content files
+These are used to control the layout and functionality of a theme using Liquid to generate 
+the HTML markupthat makes up the pages of the merchant's online store.
+
+Supporting Assets
+These are assets, scripts, or locale files that are either called or consumed by other files in the theme. 
+CSS is considered a supporting asset you will edit when modifying an existing theme.
+
+Config Files
+These use JSON to store configuration data that can be customized using the theme editor. 
+
+Content files
+Let's review how each theme helps to customize your customer’s site. 
+We’ll start by exploring content files. 
+The organization of each page is determined by the following components.
+
+The Layout file
+It is the base of the theme and hosts the repeated elements like header and footer.
+
+The Template
+Templates controls whats rendered on each type of page in a theme.
+Each theme includes different types of templates to display different type of content.
+Such as homepage and products.
+You can create multiple templates for the same resource.
+Json templates act as only wrappers for the sections, liquid templates contain the acutal code.
+
+The section groups rendered by the layout
+Containers that enable merchants to add, remove, reorder sections in areas of the layout files such as header and footer.
+
+The sections rendered by the template
+Reusable customisable modules of content that merchants can add to templates and section groups.
+
+The blocks that each sections contains
+Reusable customisable modules of content that merchants can add/remove/reorder to sections.
+
